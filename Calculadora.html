@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+    
+<script>
+/*
+desde ja agradeço a Oportunidade!
+*/
+var nome = prompt('Por favor, antes de inciarmos me diga seu nome');
+alert('QUE LEGAL VOCE SE CHAMA '+nome);
+alert ('vamos começar !');
+
+var numero1 = prompt('insira seu numero...');
+var sinal = prompt('Prossiga com o sinal da operação');
+
+while(sinal !='+' && sinal != '-' && sinal != '/' && sinal !='*'){
+    alert =('por favor informe o sinal correto');
+    sinal = prompt('insira seu sinal');
+}
+var numero2 = prompt('insira seu segundo numero');
+
+
+numero1 = parseInt(numero1);
+numero2 = parseInt (numero2);
+
+var resultadofinal = 0;
+
+if(sinal == '+'){
+    resultadofinal = numero1 + numero2;
+}else if(sinal == '-'){
+    resultadofinal = numero1 - numero2;
+}else if(sinal == '/'){
+    resultadofinal = numero1 / numero2;
+}else if(sinal == '*'){
+    resultadofinal = numero1 * numero2;
+}
+
+alert('Seu resultado final é '+resultadofinal);
+
+
+
+</script>
+</body>
+</html>
